@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lee tu Horóscopo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="stars-container">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+    </div>
+    
+    <main class="container">
+      <header>
+        <h1>Descubre tu Horóscopo</h1>
+        <p class="subtitle">Conoce lo que las estrellas tienen preparado para ti</p>
+      </header>
+
+      <div class="card">
+        <!-- AREA DE SOLO LECTURA -->
+        <div id="horoscope-container" class="horoscope-result"></div>
+
+        <div class="input-section">
+          <!-- CAMPO DE FECHA DE NACIMIENTO -->
+          <div class="input-group">
+            <label for="birthdate">Fecha de nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" />
+          </div>
+
+          <!-- BOTÓN PARA OBTENER HORÓSCOPO -->
+          <button id="get-horoscope" class="btn-horoscope">Revelar mi destino</button>
+        </div>
+      </div>
+
+      <footer>
+        <p>Las estrellas guían tu camino ✨</p>
+      </footer>
+    </main>
+
+    <!-- CONTROLADOR PRINCIPAL (ES6 MODULE) -->
+    <script type="module" src="controller.js" defer></script>
+  </body>
+</html>
